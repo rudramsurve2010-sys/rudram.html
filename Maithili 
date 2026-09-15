@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Maithili ❤️</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Poppins", Arial, sans-serif;
+        background: radial-gradient(circle at top, #35105c, #12001f 65%, #050008);
+        color: white;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .page {
+        min-height: 100vh;
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        text-align: center;
+        animation: fadeIn 0.8s ease;
+    }
+
+    .page.active {
+        display: flex;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 850px;
+        padding: 35px 25px;
+    }
+
+    h1 {
+        font-size: clamp(35px, 8vw, 70px);
+        margin-bottom: 20px;
+        color: #fff;
+        text-shadow:
+            0 0 10px #ff66c4,
+            0 0 25px #ff1493,
+            0 0 45px #ff1493;
+    }
+
+    h2 {
+        font-size: clamp(28px, 6vw, 48px);
+        margin-bottom: 25px;
+        color: #ffd6f3;
+        text-shadow: 0 0 15px #ff4db8;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #f8eafa;
+    }
+
+    .intro {
+        font-size: clamp(25px, 6vw, 45px);
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .surprise {
+        font-size: 18px;
+        margin-bottom: 35px;
+        color: #ffd5ef;
+    }
+
+    button {
+        border: none;
+        padding: 14px 30px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #ff1493, #9b4dff);
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(255, 20, 147, 0.6);
+        transition: 0.3s;
+        margin: 8px;
+    }
+
+    button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 35px rgba(255, 20, 147, 0.9);
+    }
+
+    .note {
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 25px;
+        padding: 28px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(255, 0, 150, 0.15);
+    }
+
+    .special-box {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .special-item {
+        background: rgba(255,255,255,0.07);
+        border-radius: 18px;
+        padding: 18px;
+        margin: 14px 0;
+        border-left: 4px solid #ff4db8;
+    }
+
+    .special-item strong {
+        color: #ff9ddd;
+        font-size: 20px;
+    }
+
+    .special-item p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .experience-list {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .experience-list li {
+        margin: 18px 0;
+        padding-left: 8px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #f8eafa;
+    }
+
+    .magic {
+        font-size: clamp(20px, 5vw, 32px);
+        line-height: 1.8;
+        font-weight: 500;
+    }
+
+    .glowing-name {
+        color: #ff6bc8;
+        animation: shine 1.5s infinite alternate;
+    }
+
+    .birthday-final {
+        font-size: clamp(40px, 9vw, 75px);
+    }
+
+    .cake {
+        font-size: 70px;
+        animation: bounce 1.2s infinite;
+        margin-bottom: 20px;
+    }
+
+    .heart {
+        position: fixed;
+        bottom: -30px;
+        font-size: 20px;
+        animation: floatUp 6s linear infinite;
+        pointer-events: none;
+        opacity: 0.7;
+    }
+
+    .firework {
+        position: fixed;
+        font-size: 45px;
+        pointer-events: none;
+        animation: firework 1.5s ease-out forwards;
+        z-index: 999;
+    }
+
+    .question {
+        font-size: clamp(25px, 6vw, 45px);
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .answer {
+        margin-top: 25px;
+        font-size: 70px;
+        animation: bounce 1s infinite;
+    }
+
+    .thanks {
+        font-size: 25px;
+        margin-top: 10px;
+        color: #ffd1ef;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes shine {
+        from {
+            text-shadow: 0 0 5px #ff1493;
+        }
+        to {
+            text-shadow:
+                0 0 15px #ff1493,
+                0 0 30px #ff69c4,
+                0 0 50px #ff1493;
+        }
+    }
+
+    @keyframes bounce {
+        0%,100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-12px);
+        }
+    }
+
+    @keyframes floatUp {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 0;
+        }
+        20% {
+            opacity: 0.8;
+        }
+        100% {
+            transform: translateY(-110vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+    @keyframes firework {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(2);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+
+    @media(max-width:600px) {
+        .content {
+            padding: 25px 12px;
+        }
+
+        .note {
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .experience-list {
+            padding-left: 15px;
+        }
+
+        .experience-list li {
+            font-size: 15px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+    <div class="content">
+        <div class="cake">🎂</div>
+
+        <div class="intro">
+            Hey My Birthday Girl ❤️
+        </div>
+
+        <div class="surprise">
+            I have some surprise for you... 👀✨
+        </div>
+
+        <button onclick="nextPage()">
+            Next 💌
+        </button>
+    </div>
+</section>
+
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+    <div class="content">
+        <h1>Happy Birthday Maithili 🎂❤️</h1>
+
+        <div class="note">
+            <p>
+                Happy Birthday to the person who somehow became my best friend,
+                my favourite person, and someone who makes my ordinary days feel
+                a little more special.
+                <br><br>
+
+                You gave me the love that I hadn't expected from any girl....
+                you fortunately became my favorite person in just few days.
+                You gave me special place in your heart. ❤️
+            </p>
+        </div>
+
+        <button onclick="nextPage()">Next ✨</button>
+    </div>
+</section>
+
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+    <div class="content">
+        <h2>Why Are You Special Section Of My Life? 💗</h2>
+
+        <div class="special-box">
+
+            <div class="special-item">
+                <strong>Your Smile 😊</strong>
+                <p>
+                    "It has a way of making everything feel better."
+                </p>
+            </div>
+
+            <div class="special-item">
+                <strong>Your Heart ❤️</strong>
+                <p>
+                    "You're genuinely one of the sweetest people I've met."
+                </p>
+            </div>
+
+            <div class="special-item">
+                <strong>Our Friendship 🫶</strong>
+                <p>
+                    "The kind of bond I never want to lose."
+                </p>
+            </div>
+
+            <div class="special-item">
+                <strong>You ✨</strong>
+                <p>
+                    "Honestly... you don't need a reason. You're just you.
+                    And for me you are more then god's gift."
+                </p>
+            </div>
+
+        </div>
+
+        <button onclick="nextPage()">Next 💕</button>
+    </div>
+</section>
+
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+    <div class="content">
+
+        <h2>The Things I Want To Experience With You ❤️</h2>
+
+        <ol class="experience-list">
+
+            <li>
+                "First of all I want to stand on marriage stage with you as my bride"
+            </li>
+
+            <li>
+                "I want sit beside you and talk with you continuously at my house"
+            </li>
+
+            <li>
+                "I want to go for long drive bike date with you"
+            </li>
+
+            <li>
+                "I want you to stay by my side whenever no one trust me"
+            </li>
+
+            <li>
+                "I never want you to leave me for anyone by your own choice except your parents choice"
+            </li>
+
+            <li>
+                "I want to know that you really love me, and is there anyone in your heart except me"
+            </li>
+
+            <li>
+                "I want you to feel safe whenever you are with me and if there's any problem you can share with me freely"
+            </li>
+
+            <li>
+                "Not last point but, I never want you to leave me and be with me forever cuz you are my first and last girl whom I am gonna love and promise me you'll always be mine forever"
+            </li>
+
+        </ol>
+
+        <button onclick="nextPage()">Next 💖</button>
+
+    </div>
+</section>
+
+
+<!-- PAGE 5 -->
+<section class="page" id="page5">
+    <div class="content">
+
+        <div class="note">
+            <p class="magic">
+                There was a chance for me to give any ability
+                then I would give you the ability to see yourself
+                by my eyes then you'll get to know how much I love you. ❤️
+            </p>
+        </div>
+
+        <br>
+
+        <button onclick="nextPage()">Next ✨</button>
+
+    </div>
+</section>
+
+
+<!-- PAGE 6 -->
+<section class="page" id="page6">
+    <div class="content">
+
+        <div class="cake">🎂✨</div>
+
+        <h1 class="birthday-final">
+            Happy Birthday
+            <br>
+            <span class="glowing-name">Maithili</span> ❤️
+        </h1>
+
+        <p>
+            Today is all about you. 🌸
+        </p>
+
+        <br>
+
+        <button onclick="celebrate()">
+            Click To Celebrate 🎉
+        </button>
+
+        <br><br>
+
+        <button onclick="nextPage()">
+            Continue 💌
+        </button>
+
+    </div>
+</section>
+
+
+<!-- PAGE 7 -->
+<section class="page" id="page7">
+    <div class="content">
+
+        <div class="question">
+            Do You Really Love Me? 👀❤️
+        </div>
+
+        <button onclick="answerYes()">
+            Yes ❤️
+        </button>
+
+        <button onclick="answerYes()">
+            Ofc Yes 😭❤️
+        </button>
+
+        <button onclick="answerNo()">
+            No 😶
+        </button>
+
+        <div id="answerArea"></div>
+
+    </div>
+</section>
+
+
+<script>
+
+let currentPage = 1;
+
+function showPage(pageNumber) {
+
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active");
+    });
+
+    document.getElementById("page" + pageNumber).classList.add("active");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+function nextPage() {
+
+    if (currentPage < 7) {
+        currentPage++;
+        showPage(currentPage);
+    }
+}
+
+
+/* Floating hearts */
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = ["❤️", "💗", "💕", "💖", "💓", "✨"];
+
+    heart.innerHTML =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 20) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
+}
+
+setInterval(createHeart, 700);
+
+
+/* Fireworks */
+function celebrate() {
+
+    const emojis = [
+        "🎆",
+        "🎇",
+        "✨",
+        "💥",
+        "🎉",
+        "💖"
+    ];
+
+    for (let i = 0; i < 35; i++) {
+
+        setTimeout(() => {
+
+            const firework = document.createElement("div");
+
+            firework.className = "firework";
+
+            firework.innerHTML =
+                emojis[Math.floor(Math.random() * emojis.length)];
+
+            firework.style.left =
+                Math.random() * 95 + "vw";
+
+            firework.style.top =
+                Math.random() * 80 + "vh";
+
+            document.body.appendChild(firework);
+
+            setTimeout(() => {
+                firework.remove();
+            }, 1500);
+
+        }, i * 70);
+    }
+}
+
+
+/* Yes answer */
+function answerYes() {
+
+    const area = document.getElementById("answerArea");
+
+    area.innerHTML = `
+        <div class="answer">🥹❤️</div>
+        <div class="thanks">
+            Thank youuu Maithili! 💗✨
+            <br>
+            You just made my birthday website even more special. 🫶
+        </div>
+    `;
+
+    celebrate();
+}
+
+
+/* No answer */
+function answerNo() {
+
+    const area = document.getElementById("answerArea");
+
+    area.innerHTML = `
+        <div class="answer">😔💔</div>
+        <div class="thanks">
+            Oh... 🥺
+        </div>
+    `;
+}
+
+</script>
+
+</body>
+</html>
